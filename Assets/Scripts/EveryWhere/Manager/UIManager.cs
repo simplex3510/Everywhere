@@ -1,25 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using EveryWhere.Base;
 
 namespace EveryWhere.Manger
 {
     public class UIManager : SingletonMonoBase<UIManager>
     {
-        private bool isSideMenuOpened = false;
+        public Animator SideMenuAnimator;
+        public Button sideMenuButton;
 
-        public void OpenSideMenu()
+        public void OnButtonClick()
         {
-            if (isSideMenuOpened == false)
-                isSideMenuOpened = true;
-        }
-
-        public void CloseSideMenu()
-        {
-            if (isSideMenuOpened == true)
-                isSideMenuOpened = false;
-
+            if (SideMenuAnimator.GetBool("isOpened") == false)
+                SideMenuAnimator.SetBool("isOpened", true);
+            else
+                SideMenuAnimator.SetBool("isOpened", false);
         }
     }
 }
