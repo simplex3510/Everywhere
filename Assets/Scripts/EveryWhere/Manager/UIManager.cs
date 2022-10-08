@@ -8,6 +8,7 @@ namespace EveryWhere.Manger
 {
     public class UIManager : SingletonMonoBase<UIManager>
     {
+        [Header("<<<Side Menu>>>")]
         public Animator SideMenuAnimator;
         public Button sideMenuButton;
 

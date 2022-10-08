@@ -7,6 +7,6 @@ namespace EveryWhere.Manger
 {
     public class GameManager : SingletonMonoBase<GameManager>
     {
-        
+        Player player;
     }
 }
