@@ -1618,6 +1618,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 238fc39c3bb2a0c418991ae0b4116d08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputField: {fileID: 0}
+  toggle: {fileID: 0}
 --- !u!4 &1371381780
 Transform:
   m_ObjectHideFlags: 0
@@ -2564,7 +2566,7 @@ MonoBehaviour:
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 4
+  m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 1
   m_CellSize: {x: 360, y: 200}

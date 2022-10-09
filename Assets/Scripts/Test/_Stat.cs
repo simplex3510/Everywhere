@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Stat
+public class _Stat
 {
     public UnitCode unitCode { get; }
     public string name { get; set; }
@@ -11,12 +11,12 @@ public class Stat
     public int money { get; set; }
     public int spec { get; set; }
 
-    public Stat()
+    public _Stat()
     {
 
     }
 
-    public Stat(UnitCode unitCode, string name, int study, int friendship, int money, int spec)
+    public _Stat(UnitCode unitCode, string name, int study, int friendship, int money, int spec)
     {
         this.unitCode = unitCode;
         this.name = name;
@@ -25,28 +25,28 @@ public class Stat
         this.money = money;
         this.spec = spec;
     }
-    public Stat SetUnitStat(UnitCode unitCode)
+    public _Stat SetUnitStat(UnitCode unitCode)
     {
-        Stat stat = null;
+        _Stat _stat = null;
 
         switch(unitCode)
         {
             case UnitCode.Human1:
-                stat = new Stat(unitCode, "Human1", 30, 20, 15, 50);
+                _stat = new _Stat(unitCode, "Human1", 30, 20, 15, 50);
                 break;
             case UnitCode.Human2:
-                stat = new Stat(unitCode, "Human2", 40, 30, 30, 15);
+                _stat = new _Stat(unitCode, "Human2", 40, 30, 30, 15);
                 break;
             case UnitCode.Human3:
-                stat = new Stat(unitCode, "Human3", 50, 20, 30, 40);
+                _stat = new _Stat(unitCode, "Human3", 50, 20, 30, 40);
                 break;
             case UnitCode.Human4:
-                stat = new Stat(unitCode, "Human4", 30, 30, 20, 40);
+                _stat = new _Stat(unitCode, "Human4", 30, 30, 20, 40);
                 break;
             case UnitCode.Human5:
-                stat = new Stat(unitCode, "Human5", 40, 15, 30, 20);
+                _stat = new _Stat(unitCode, "Human5", 40, 15, 30, 20);
                 break;
         }
-        return stat;
+        return _stat;
     }
 }
