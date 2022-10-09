@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using EveryWhere.Base;
+using UnityEditor.Sprites;
 
 namespace EveryWhere.Manger
 {
@@ -33,13 +34,6 @@ namespace EveryWhere.Manger
                 {
                     for (int time = 0; time < MAX_DAY_TIMES + 1; time++)
                     {
-                        // 이미 일정이 있는 셀이라면
-                        if (timeline[day, time] == true)
-                        {
-                            Debug.Log("이미 일정이 있습니다.");
-                            return;
-                        }
-
                         if (lecture.times[time] == true)
                         {
                             timeline[day, time] = true;
