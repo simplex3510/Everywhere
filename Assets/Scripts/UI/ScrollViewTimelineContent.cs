@@ -1,52 +1,53 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using EveryWhere.Manger;
 using UnityEngine.UI;
+using EveryWhere.Manger;
+using TMPro;
 
 public class ScrollViewTimelineContent : MonoBehaviour
 {
-    public GameObject timeCell;
-    public GameObject dayGrid;
+    //public GameObject timeCell;
+    //public GameObject dayGrid;
 
-    private List<List<GameObject>> timeline;
+    private GameObject[,] timeline;
 
     void Awake()
     {
         InitializeTimeline();
-        RectTransform rectTransform = GetComponent<RectTransform>();
-        Vector2 sizeDelta = rectTransform.sizeDelta;
-        sizeDelta.y = transform.GetChild(0).childCount * 149;
-        rectTransform.sizeDelta = sizeDelta;
-    }
-
-    public void InitializeTimeline()
-    {
-        timeline = new List<List<GameObject>>();
-        for (int day = 0; day < ScheduleManager.MAX_WEEK_DAYS; day++)
-        {
-            timeline.Add(new List<GameObject>());
-            timeline[day].Add(Instantiate(dayGrid));
-            timeline[day][0].transform.SetParent(transform);
-            for (int time = 1; time < ScheduleManager.MAX_DAY_TIMES + 1; time++)
-            {
-                timeline[day].Add(Instantiate(timeCell));
-                timeline[day][time].transform.SetParent(timeline[day][0].transform);
-            }
-        }
+        //RectTransform rectTransform = GetComponent<RectTransform>();
+        //Vector2 sizeDelta = rectTransform.sizeDelta;
+        //sizeDelta.y = transform.GetChild(0).childCount * 149;
+        //rectTransform.sizeDelta = sizeDelta;
     }
 
     public void UpdateTimeline()
     {
-        bool[,] timeline = ScheduleManager.Instance.GetTimeline();
         for (int day = 0; day < ScheduleManager.MAX_WEEK_DAYS; day++)
         {
             for (int time = 1; time < ScheduleManager.MAX_DAY_TIMES + 1; time++)
             {
-                if (timeline[day, time] == true)
+                if (ScheduleManager.Instance.GetTimelineCell(day, time).isAllocated == true)
                 {
-                    this.timeline[day][time].GetComponent<Button>().interactable = false;
+                    Button button = timeline[day, time].GetComponent<Button>();
+                    button.interactable = false;
+                    button.GetComponentInChildren<TMP_Text>().text = "강의";
                 }
+            }
+        }
+    }
+
+    private void InitializeTimeline()
+    {
+        GameObject timeline = transform.GetChild(0).gameObject;     // Content 하위의 Timeline 객체 Get
+        GameObject dayGrid = null;                                  // Timeline 하위의 각각의 DayGrid 객체
+        this.timeline = new GameObject[ScheduleManager.MAX_WEEK_DAYS, ScheduleManager.MAX_DAY_TIMES + 1];
+        for (int day = 0; day < ScheduleManager.MAX_WEEK_DAYS; day++)
+        {
+            dayGrid = timeline.transform.GetChild(day).gameObject;
+            for (int time = 1; time < ScheduleManager.MAX_DAY_TIMES + 1; time++)
+            {
+                this.timeline[day, time] = dayGrid.transform.GetChild(time-1).gameObject;
             }
         }
     }

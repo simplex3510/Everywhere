@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using EveryWhere.Base;
-using UnityEditor.Sprites;
 
 namespace EveryWhere.Manger
 {
@@ -11,19 +10,22 @@ namespace EveryWhere.Manger
         public static readonly int MAX_WEEK_DAYS = 7;
         public static readonly int MAX_DAY_TIMES = 24;
 
-        private static bool[,] timeline;
-
-        [SerializeField] private Lecture lecture_A;
-
+        private static TimelineCell[,] timeline;
 
         void Awake()
         {
-            timeline = new bool[MAX_WEEK_DAYS, MAX_DAY_TIMES + 1];
+            timeline = new TimelineCell[MAX_WEEK_DAYS, MAX_DAY_TIMES + 1];
+            InitializeTimeline();
         }
 
-        public ref bool[,] GetTimeline()
+        public TimelineCell[,] GetTimeline()
         {
-            return ref timeline;
+            return timeline;
+        }
+
+        public TimelineCell GetTimelineCell(int day, int time)
+        {
+            return timeline[day, time];
         }
 
         public void AddTimeline(Lecture lecture)
@@ -32,13 +34,25 @@ namespace EveryWhere.Manger
             {
                 if (lecture.days[day] == true)
                 {
-                    for (int time = 0; time < MAX_DAY_TIMES + 1; time++)
+                    for (int time = 1; time < MAX_DAY_TIMES + 1; time++)
                     {
                         if (lecture.times[time] == true)
                         {
-                            timeline[day, time] = true;
+                            timeline[day, time] = new TimelineCell();
+                            timeline[day, time].AllocateCell(true, lecture.scheduleType);
                         }
                     }
+                }
+            }
+        }
+
+        private void InitializeTimeline()
+        {
+            for (int day = 0; day < MAX_WEEK_DAYS; day++)
+            {
+                for (int time = 1; time < MAX_DAY_TIMES + 1; time++)
+                {
+                    timeline[day, time] = new TimelineCell();
                 }
             }
         }
