@@ -21,3 +21,8 @@ namespace EveryWhere.Manger
         }
     }
 }
+
+public class UIManager : MonoBehaviour
+{
+    public Button recentlyClickedBtn;
+}

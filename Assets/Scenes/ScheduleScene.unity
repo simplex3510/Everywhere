@@ -206,8 +206,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 832265749}
   m_HandleRect: {fileID: 832265748}
   m_Direction: 0
-  m_Value: -0.00000016347434
-  m_Size: 0.7431288
+  m_Value: -0.00000032788034
+  m_Size: 0.7438587
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1200,7 +1200,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -540.06885, y: 75.00006}
+  m_AnchoredPosition: {x: -540.59924, y: 75.00006}
   m_SizeDelta: {x: 1453.5, y: 130}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &281835940
@@ -1476,7 +1476,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 911326891}
   m_HandleRect: {fileID: 911326890}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -3282,6 +3282,7 @@ GameObject:
   m_Component:
   - component: {fileID: 923059611}
   - component: {fileID: 923059610}
+  - component: {fileID: 923059612}
   m_Layer: 0
   m_Name: ScheduleManager
   m_TagString: Untagged
@@ -3316,6 +3317,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &923059612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923059609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 340029f62cc38124a98f5d3306aab83f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  recentlyClickedBtn: {fileID: 0}
 --- !u!1 &937322787
 GameObject:
   m_ObjectHideFlags: 0
@@ -3474,6 +3488,7 @@ GameObject:
   - component: {fileID: 1027006213}
   - component: {fileID: 1027006212}
   - component: {fileID: 1027006211}
+  - component: {fileID: 1027006214}
   m_Layer: 5
   m_Name: Button (4)
   m_TagString: Untagged
@@ -3545,7 +3560,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1027006212}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1027006214}
+        m_TargetAssemblyTypeName: ScheduleBtn, Assembly-CSharp
+        m_MethodName: Click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1027006212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3584,6 +3611,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1027006209}
   m_CullTransparentMesh: 1
+--- !u!114 &1027006214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1027006209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bceb8b52b545096418714311ad2e1dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIManager: {fileID: 923059609}
 --- !u!1 &1061872572
 GameObject:
   m_ObjectHideFlags: 0
@@ -4623,6 +4663,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1206062733}
   m_CullTransparentMesh: 1
+--- !u!1 &1218171212 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 953614487584088716, guid: 396bfabe12e207a4988e3e10880cf1e5, type: 3}
+  m_PrefabInstance: {fileID: 2471061444982856785}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1218171217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218171212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bceb8b52b545096418714311ad2e1dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIManager: {fileID: 923059609}
 --- !u!1 &1241826880
 GameObject:
   m_ObjectHideFlags: 0
@@ -4739,6 +4797,7 @@ GameObject:
   - component: {fileID: 1285951403}
   - component: {fileID: 1285951402}
   - component: {fileID: 1285951401}
+  - component: {fileID: 1285951404}
   m_Layer: 5
   m_Name: Button (2)
   m_TagString: Untagged
@@ -4810,7 +4869,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1285951402}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1285951404}
+        m_TargetAssemblyTypeName: ScheduleBtn, Assembly-CSharp
+        m_MethodName: Click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1285951402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4849,6 +4920,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1285951399}
   m_CullTransparentMesh: 1
+--- !u!114 &1285951404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285951399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bceb8b52b545096418714311ad2e1dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIManager: {fileID: 923059609}
 --- !u!1 &1300396841
 GameObject:
   m_ObjectHideFlags: 0
@@ -5346,6 +5430,7 @@ GameObject:
   - component: {fileID: 1444742931}
   - component: {fileID: 1444742930}
   - component: {fileID: 1444742929}
+  - component: {fileID: 1444742932}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -5418,21 +5503,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 923059610}
-        m_TargetAssemblyTypeName: EveryWhere.Manger.ScheduleManager, Assembly-CSharp
-        m_MethodName: GetKey
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 667598381}
-        m_TargetAssemblyTypeName: ScrollViewTimelineContent, Assembly-CSharp
-        m_MethodName: UpdateTimeline
+      - m_Target: {fileID: 1444742932}
+        m_TargetAssemblyTypeName: ScheduleBtn, Assembly-CSharp
+        m_MethodName: Click
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5480,6 +5553,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1444742927}
   m_CullTransparentMesh: 1
+--- !u!114 &1444742932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444742927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bceb8b52b545096418714311ad2e1dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIManager: {fileID: 923059609}
 --- !u!1 &1472702550
 GameObject:
   m_ObjectHideFlags: 0
@@ -5877,6 +5963,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1579848408}
   m_CullTransparentMesh: 1
+--- !u!1 &1602780738 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2163724147916874231, guid: 396bfabe12e207a4988e3e10880cf1e5, type: 3}
+  m_PrefabInstance: {fileID: 2471061444982856785}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1602780743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602780738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bceb8b52b545096418714311ad2e1dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIManager: {fileID: 923059609}
 --- !u!1 &1617900768
 GameObject:
   m_ObjectHideFlags: 0
@@ -7664,6 +7768,7 @@ GameObject:
   - component: {fileID: 1973203395}
   - component: {fileID: 1973203394}
   - component: {fileID: 1973203393}
+  - component: {fileID: 1973203396}
   m_Layer: 5
   m_Name: Button (5)
   m_TagString: Untagged
@@ -7735,7 +7840,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1973203394}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1973203396}
+        m_TargetAssemblyTypeName: ScheduleBtn, Assembly-CSharp
+        m_MethodName: Click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1973203394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7774,6 +7891,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1973203391}
   m_CullTransparentMesh: 1
+--- !u!114 &1973203396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973203391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bceb8b52b545096418714311ad2e1dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIManager: {fileID: 923059609}
 --- !u!1 &1978794397
 GameObject:
   m_ObjectHideFlags: 0
@@ -7786,6 +7916,7 @@ GameObject:
   - component: {fileID: 1978794401}
   - component: {fileID: 1978794400}
   - component: {fileID: 1978794399}
+  - component: {fileID: 1978794402}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -7857,7 +7988,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1978794400}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1978794402}
+        m_TargetAssemblyTypeName: ScheduleBtn, Assembly-CSharp
+        m_MethodName: Click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1978794400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7896,6 +8039,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1978794397}
   m_CullTransparentMesh: 1
+--- !u!114 &1978794402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1978794397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bceb8b52b545096418714311ad2e1dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIManager: {fileID: 923059609}
 --- !u!1 &1990010789
 GameObject:
   m_ObjectHideFlags: 0
@@ -7984,6 +8140,7 @@ GameObject:
   - component: {fileID: 2002264973}
   - component: {fileID: 2002264972}
   - component: {fileID: 2002264971}
+  - component: {fileID: 2002264974}
   m_Layer: 5
   m_Name: Button (3)
   m_TagString: Untagged
@@ -8055,7 +8212,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2002264972}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2002264974}
+        m_TargetAssemblyTypeName: ScheduleBtn, Assembly-CSharp
+        m_MethodName: Click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2002264972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8094,6 +8263,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2002264969}
   m_CullTransparentMesh: 1
+--- !u!114 &2002264974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002264969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bceb8b52b545096418714311ad2e1dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIManager: {fileID: 923059609}
 --- !u!1 &2002936429
 GameObject:
   m_ObjectHideFlags: 0
@@ -9920,6 +10102,34 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 953614487584088718, guid: 396bfabe12e207a4988e3e10880cf1e5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 953614487584088718, guid: 396bfabe12e207a4988e3e10880cf1e5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 953614487584088718, guid: 396bfabe12e207a4988e3e10880cf1e5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1218171217}
+    - target: {fileID: 953614487584088718, guid: 396bfabe12e207a4988e3e10880cf1e5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 953614487584088718, guid: 396bfabe12e207a4988e3e10880cf1e5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 953614487584088718, guid: 396bfabe12e207a4988e3e10880cf1e5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ScheduleBtn, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 953614487584088718, guid: 396bfabe12e207a4988e3e10880cf1e5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 953614487584088719, guid: 396bfabe12e207a4988e3e10880cf1e5, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -10399,6 +10609,58 @@ PrefabInstance:
     - target: {fileID: 2163724147916874228, guid: 396bfabe12e207a4988e3e10880cf1e5, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2163724147916874229, guid: 396bfabe12e207a4988e3e10880cf1e5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2163724147916874229, guid: 396bfabe12e207a4988e3e10880cf1e5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2163724147916874229, guid: 396bfabe12e207a4988e3e10880cf1e5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2163724147916874229, guid: 396bfabe12e207a4988e3e10880cf1e5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1602780743}
+    - target: {fileID: 2163724147916874229, guid: 396bfabe12e207a4988e3e10880cf1e5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 667598381}
+    - target: {fileID: 2163724147916874229, guid: 396bfabe12e207a4988e3e10880cf1e5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2163724147916874229, guid: 396bfabe12e207a4988e3e10880cf1e5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2163724147916874229, guid: 396bfabe12e207a4988e3e10880cf1e5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 2163724147916874229, guid: 396bfabe12e207a4988e3e10880cf1e5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: UpdateTimeline
+      objectReference: {fileID: 0}
+    - target: {fileID: 2163724147916874229, guid: 396bfabe12e207a4988e3e10880cf1e5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ScheduleBtn, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2163724147916874229, guid: 396bfabe12e207a4988e3e10880cf1e5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: ScrollViewTimelineContent, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2163724147916874229, guid: 396bfabe12e207a4988e3e10880cf1e5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2163724147916874229, guid: 396bfabe12e207a4988e3e10880cf1e5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2201914807613665163, guid: 396bfabe12e207a4988e3e10880cf1e5, type: 3}
       propertyPath: m_AnchorMax.y
