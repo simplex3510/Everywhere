@@ -12,6 +12,9 @@ namespace EveryWhere.Manger
         public Animator SideMenuAnimator;
         public Button sideMenuButton;
 
+        [Header("<<<StartGame>>>")]
+        public Button recentlyClickedButton;
+
         public void OnButtonClick()
         {
             if (SideMenuAnimator.GetBool("isOpened") == false)
@@ -22,7 +25,7 @@ namespace EveryWhere.Manger
     }
 }
 
-public class UIManager : MonoBehaviour
-{
-    public Button recentlyClickedBtn;
-}
+//public class UIManager : MonoBehaviour
+//{
+//    
+//}
