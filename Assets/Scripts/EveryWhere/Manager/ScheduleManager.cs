@@ -29,17 +29,37 @@ namespace EveryWhere.Manger
         }
 
         public void AddTimeline(Lecture lecture)
-         {
+        {
             for (int day = 0; day < MAX_WEEK_DAYS; day++)
             {
                 if (lecture.days[day] == true)
                 {
                     for (int time = 1; time < MAX_DAY_TIMES + 1; time++)
                     {
-                        if (lecture.times[time] == true)
+                        if (lecture.times[time] == true && timeline[day, time].isAllocated == false)
                         {
-                            timeline[day, time] = new TimelineCell();
                             timeline[day, time].AllocateCell(true, lecture.scheduleType);
+                        }
+                        else if (lecture.times[time] == true && timeline[day, time].isAllocated == true)
+                        {
+                            timeline[day, time].DeallocateCell();
+                        }
+                    }
+                }
+            }
+        }
+
+        public void DeleteTimeline(Lecture lecture)
+        {
+            for (int day = 0; day < MAX_WEEK_DAYS; day++)
+            {
+                if (lecture.days[day] == true)
+                {
+                    for (int time = 1; time < MAX_DAY_TIMES + 1; time++)
+                    {
+                        if (lecture.times[time] == true && timeline[day, time].isAllocated == true)
+                        {
+                            timeline[day, time].DeallocateCell();
                         }
                     }
                 }

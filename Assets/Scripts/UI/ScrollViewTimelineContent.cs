@@ -33,6 +33,12 @@ public class ScrollViewTimelineContent : MonoBehaviour
                     button.interactable = false;
                     button.GetComponentInChildren<TMP_Text>().text = "°­ÀÇ";
                 }
+                else
+                {
+                    Button button = timeline[day, time].GetComponent<Button>();
+                    button.interactable = true;
+                    button.GetComponentInChildren<TMP_Text>().text = "";
+                }
             }
         }
     }
