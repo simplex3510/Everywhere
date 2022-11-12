@@ -13,10 +13,11 @@ namespace EveryWhere.Manger
 
         [SerializeField] private TMP_Text nickname;
         [SerializeField] private Toggle genderMale;
+        [SerializeField] private StatDistribute stat;
 
         public void InitalizePlayer()
         {
-            player = new Player(nickname.text, genderMale.isOn, 0, 0, 0, 0);
+            player = new Player(nickname.text, genderMale.isOn, stat.Sociability, stat.LearningAbility, stat.EconomicAbility, stat.SpecAbility);
         }
     }
 }

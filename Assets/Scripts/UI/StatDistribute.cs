@@ -15,20 +15,20 @@ public class StatDistribute : MonoBehaviour
     public Slider learningAbilitySlider;
     public Slider economicAbilitySlider;
     public Slider specAbilitySlider;
+    public float Sociability { get; private set; } = 0f;
+    public float LearningAbility { get; private set; } = 0f;
+    public float EconomicAbility { get; private set; } = 0f;
+    public float SpecAbility { get; private set; } = 0f;
 
     private int stats = 12;
-    private int sociability = 0;
-    private int learningAbility = 0;
-    private int economicAbility = 0;
-    private int specAbility = 0;
 
     #region sociability
     public void OnClickPlusSociability()
     {
-        if (sociability < 10 && 0 < stats)
+        if (Sociability < 10 && 0 < stats)
         {
             stats--;
-            sociability++;
+            Sociability++;
         }
 
         if (stats <= 0)
@@ -37,16 +37,16 @@ public class StatDistribute : MonoBehaviour
         }
 
         StartCoroutine(ChangeSociability());
-        sociabilityText.text = sociability.ToString();
+        sociabilityText.text = Sociability.ToString();
         statsText.text = stats.ToString();
     }
 
     public void OnClickMinusSociability()
     {
-        if (0 < sociability)
+        if (0 < Sociability)
         {
             stats++;
-            sociability--;
+            Sociability--;
         }
 
         if (12 <= stats)
@@ -55,14 +55,14 @@ public class StatDistribute : MonoBehaviour
         }
 
         StartCoroutine(ChangeSociability());
-        sociabilityText.text = sociability.ToString();
+        sociabilityText.text = Sociability.ToString();
         statsText.text = stats.ToString();
     }
 
     private IEnumerator ChangeSociability()
     {
         float timer = 0.0f;
-        float destination = sociability * 10f;
+        float destination = Sociability * 10f;
         while (timer <= 0.3f)
         {
             timer += Time.deltaTime;
@@ -75,10 +75,10 @@ public class StatDistribute : MonoBehaviour
     #region LearningAbility
     public void OnClickPlusLearningAbility()
     {
-        if (learningAbility < 10 && 0 < stats)
+        if (LearningAbility < 10 && 0 < stats)
         {
             stats--;
-            learningAbility++;
+            LearningAbility++;
         }
 
         if (stats <= 0)
@@ -87,16 +87,16 @@ public class StatDistribute : MonoBehaviour
         }
 
         StartCoroutine(ChangeLearningAbility());
-        learningAbilityText.text = learningAbility.ToString();
+        learningAbilityText.text = LearningAbility.ToString();
         statsText.text = stats.ToString();
     }
 
     public void OnClickMinusLearningAbility()
     {
-        if (0 < learningAbility)
+        if (0 < LearningAbility)
         {
             stats++;
-            learningAbility--;
+            LearningAbility--;
         }
 
         if (12 <= stats)
@@ -105,14 +105,14 @@ public class StatDistribute : MonoBehaviour
         }
 
         StartCoroutine(ChangeLearningAbility());
-        learningAbilityText.text = learningAbility.ToString();
+        learningAbilityText.text = LearningAbility.ToString();
         statsText.text = stats.ToString();
     }
 
     private IEnumerator ChangeLearningAbility()
     {
         float timer = 0.0f;
-        float destination = learningAbility * 10f;
+        float destination = LearningAbility * 10f;
         while (timer <= 0.3f)
         {
             timer += Time.deltaTime;
@@ -125,10 +125,10 @@ public class StatDistribute : MonoBehaviour
     #region EconomicAbility
     public void OnClickPlusEconomicAbility()
     {
-        if (economicAbility < 10 && 0 < stats)
+        if (EconomicAbility < 10 && 0 < stats)
         {
             stats--;
-            economicAbility++;
+            EconomicAbility++;
         }
 
         if (stats <= 0)
@@ -137,16 +137,16 @@ public class StatDistribute : MonoBehaviour
         }
 
         StartCoroutine(ChangeEconomicAbility());
-        economicAbilityText.text = economicAbility.ToString();
+        economicAbilityText.text = EconomicAbility.ToString();
         statsText.text = stats.ToString();
     }
 
     public void OnClickMinusEconomicAbility()
     {
-        if (0 < economicAbility)
+        if (0 < EconomicAbility)
         {
             stats++;
-            economicAbility--;
+            EconomicAbility--;
         }
 
         if (12 <= stats)
@@ -155,14 +155,14 @@ public class StatDistribute : MonoBehaviour
         }
 
         StartCoroutine(ChangeEconomicAbility());
-        economicAbilityText.text = economicAbility.ToString();
+        economicAbilityText.text = EconomicAbility.ToString();
         statsText.text = stats.ToString();
     }
 
     private IEnumerator ChangeEconomicAbility()
     {
         float timer = 0.0f;
-        float destination = economicAbility * 10f;
+        float destination = EconomicAbility * 10f;
         while (timer <= 0.3f)
         {
             timer += Time.deltaTime;
@@ -175,10 +175,10 @@ public class StatDistribute : MonoBehaviour
     #region SpecAbility
     public void OnClickPlusSpecAbility()
     {
-        if (specAbility < 10 && 0 < stats)
+        if (SpecAbility < 10 && 0 < stats)
         {
             stats--;
-            specAbility++;
+            SpecAbility++;
         }
 
         if (stats <= 0)
@@ -187,16 +187,16 @@ public class StatDistribute : MonoBehaviour
         }
 
         StartCoroutine(ChangeSpecAbility());
-        specAbilityText.text = specAbility.ToString();
+        specAbilityText.text = SpecAbility.ToString();
         statsText.text = stats.ToString();
     }
 
     public void OnClickMinusSpecAbility()
     {
-        if (0 < specAbility)
+        if (0 < SpecAbility)
         {
             stats++;
-            specAbility--;
+            SpecAbility--;
         }
 
         if (12 <= stats)
@@ -205,14 +205,14 @@ public class StatDistribute : MonoBehaviour
         }
 
         StartCoroutine(ChangeSpecAbility());
-        specAbilityText.text = specAbility.ToString();
+        specAbilityText.text = SpecAbility.ToString();
         statsText.text = stats.ToString();
     }
 
     private IEnumerator ChangeSpecAbility()
     {
         float timer = 0.0f;
-        float destination = specAbility * 10f;
+        float destination = SpecAbility * 10f;
         while (timer <= 0.3f)
         {
             timer += Time.deltaTime;

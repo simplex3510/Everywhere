@@ -12,7 +12,7 @@ public class Player
     public string Nickname { get; private set; } = "NULL";
     private bool Gender { get; set; }
 
-    public Player(string nickname, bool gender, int Sociability, int LearningAbility, int EconomicAbility, int SpecAbility)
+    public Player(string nickname, bool gender, float Sociability, float LearningAbility, float EconomicAbility, float SpecAbility)
     {
         Nickname = nickname;
         Gender = gender;

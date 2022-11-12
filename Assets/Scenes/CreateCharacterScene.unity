@@ -416,6 +416,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nickname: {fileID: 1570124750}
   genderMale: {fileID: 455980847}
+  stat: {fileID: 1674624420}
 --- !u!4 &163880180
 Transform:
   m_ObjectHideFlags: 0
