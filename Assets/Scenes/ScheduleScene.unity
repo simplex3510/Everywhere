@@ -206,8 +206,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 832265749}
   m_HandleRect: {fileID: 832265748}
   m_Direction: 0
-  m_Value: -0.00000049094933
-  m_Size: 0.7434042
+  m_Value: 1.0000701
+  m_Size: 0.99919426
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1200,8 +1200,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -540.26886, y: 75.00006}
-  m_SizeDelta: {x: 1453.5, y: 130}
+  m_AnchoredPosition: {x: -540.6853, y: 75.00006}
+  m_SizeDelta: {x: 1080.5, y: 130}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &281835940
 MonoBehaviour:
@@ -1349,8 +1349,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1361764559}
   m_HandleRect: {fileID: 1361764558}
   m_Direction: 2
-  m_Value: 0.9999999
-  m_Size: 0.33787498
+  m_Value: 1
+  m_Size: 0.337875
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1476,7 +1476,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 911326891}
   m_HandleRect: {fileID: 911326890}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -3474,7 +3474,6 @@ GameObject:
   - component: {fileID: 1027006213}
   - component: {fileID: 1027006212}
   - component: {fileID: 1027006211}
-  - component: {fileID: 1027006214}
   m_Layer: 5
   m_Name: Button (4)
   m_TagString: Untagged
@@ -3547,7 +3546,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1027006214}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ScheduleBtn, Assembly-CSharp
         m_MethodName: Click
         m_Mode: 1
@@ -3597,18 +3596,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1027006209}
   m_CullTransparentMesh: 1
---- !u!114 &1027006214
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1027006209}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bceb8b52b545096418714311ad2e1dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1061872572
 GameObject:
   m_ObjectHideFlags: 0
@@ -4811,7 +4798,6 @@ GameObject:
   - component: {fileID: 1285951403}
   - component: {fileID: 1285951402}
   - component: {fileID: 1285951401}
-  - component: {fileID: 1285951404}
   m_Layer: 5
   m_Name: Button (2)
   m_TagString: Untagged
@@ -4884,7 +4870,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1285951404}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ScheduleBtn, Assembly-CSharp
         m_MethodName: Click
         m_Mode: 1
@@ -4934,18 +4920,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1285951399}
   m_CullTransparentMesh: 1
---- !u!114 &1285951404
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1285951399}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bceb8b52b545096418714311ad2e1dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1300396841
 GameObject:
   m_ObjectHideFlags: 0
@@ -5443,7 +5417,6 @@ GameObject:
   - component: {fileID: 1444742931}
   - component: {fileID: 1444742930}
   - component: {fileID: 1444742929}
-  - component: {fileID: 1444742932}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -5516,7 +5489,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1444742932}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ScheduleButton, Assembly-CSharp
         m_MethodName: OnClickButtonSleep
         m_Mode: 1
@@ -5566,18 +5539,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1444742927}
   m_CullTransparentMesh: 1
---- !u!114 &1444742932
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1444742927}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bceb8b52b545096418714311ad2e1dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1472702550
 GameObject:
   m_ObjectHideFlags: 0
@@ -7763,7 +7724,6 @@ GameObject:
   - component: {fileID: 1973203395}
   - component: {fileID: 1973203394}
   - component: {fileID: 1973203393}
-  - component: {fileID: 1973203396}
   m_Layer: 5
   m_Name: Button (5)
   m_TagString: Untagged
@@ -7836,7 +7796,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1973203396}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ScheduleBtn, Assembly-CSharp
         m_MethodName: Click
         m_Mode: 1
@@ -7886,18 +7846,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1973203391}
   m_CullTransparentMesh: 1
---- !u!114 &1973203396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1973203391}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bceb8b52b545096418714311ad2e1dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1978794397
 GameObject:
   m_ObjectHideFlags: 0
@@ -8133,7 +8081,6 @@ GameObject:
   - component: {fileID: 2002264973}
   - component: {fileID: 2002264972}
   - component: {fileID: 2002264971}
-  - component: {fileID: 2002264974}
   m_Layer: 5
   m_Name: Button (3)
   m_TagString: Untagged
@@ -8206,7 +8153,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2002264974}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ScheduleBtn, Assembly-CSharp
         m_MethodName: Click
         m_Mode: 1
@@ -8256,18 +8203,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2002264969}
   m_CullTransparentMesh: 1
---- !u!114 &2002264974
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2002264969}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bceb8b52b545096418714311ad2e1dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2002936429
 GameObject:
   m_ObjectHideFlags: 0

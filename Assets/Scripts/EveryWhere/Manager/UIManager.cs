@@ -24,8 +24,3 @@ namespace EveryWhere.Manger
         }
     }
 }
-
-//public class UIManager : MonoBehaviour
-//{
-//    
-//}

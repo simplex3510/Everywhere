@@ -12,12 +12,16 @@ namespace EveryWhere.Manger
 
         private static TimelineCell[,] timeline;
 
+        private static readonly int MINIMUM_WEEK_SLEEP_TIMES = 42;
+        private float tiredness = 100.0f;
+
         void Awake()
         {
             timeline = new TimelineCell[MAX_WEEK_DAYS, MAX_DAY_TIMES + 1];
             InitializeTimeline();
         }
 
+        #region Lecture
         public TimelineCell[,] GetTimeline()
         {
             return timeline;
@@ -76,5 +80,14 @@ namespace EveryWhere.Manger
                 }
             }
         }
+        #endregion
+
+        #region
+
+        // 최소 주간 수면 시간 설정
+        // 각 행동(일정)마다 피로도 분배 및 설정
+        // 일정 할당 및 해제 구현
+
+        #endregion
     }
 }
