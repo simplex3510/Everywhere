@@ -282,6 +282,7 @@ GameObject:
   - component: {fileID: 2898308428827930129}
   - component: {fileID: 2898308428827930128}
   - component: {fileID: 2898308428827930143}
+  - component: {fileID: 7638412735767000194}
   m_Layer: 5
   m_Name: TimeCell
   m_TagString: Untagged
@@ -393,3 +394,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &7638412735767000194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2898308428827930141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c4d979aa73f2804daa7c508cbbc41b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
