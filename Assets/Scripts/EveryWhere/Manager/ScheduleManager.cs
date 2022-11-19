@@ -12,7 +12,10 @@ namespace EveryWhere.Manger
 
         private static TimelineCell[,] timeline;
 
-        private static readonly int MINIMUM_WEEK_SLEEP_TIMES = 42;
+        private readonly int MINIMUM_WEEK_SLEEP_TIMES = 42; // 최소 주간 수면 시간
+        private readonly int MAX_CREDIT = 21;               // 최대 학점
+        private readonly int MIN_CREDIT = 12;               // 최소 학점
+        private int currentCredit = 0;
         private float tiredness = 100.0f;
 
         void Awake()
@@ -51,6 +54,8 @@ namespace EveryWhere.Manger
                     }
                 }
             }
+
+            currentCredit += 3;
         }
 
         public void DeleteTimeline(Lecture lecture)
@@ -68,6 +73,8 @@ namespace EveryWhere.Manger
                     }
                 }
             }
+
+            currentCredit -= 3;
         }
 
         private void InitializeTimeline()

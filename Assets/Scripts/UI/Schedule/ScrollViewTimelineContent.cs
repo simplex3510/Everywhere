@@ -7,18 +7,11 @@ using TMPro;
 
 public class ScrollViewTimelineContent : MonoBehaviour
 {
-    //public GameObject timeCell;
-    //public GameObject dayGrid;
-
     private GameObject[,] timeline;
 
     void Awake()
     {
         InitializeTimeline();
-        //RectTransform rectTransform = GetComponent<RectTransform>();
-        //Vector2 sizeDelta = rectTransform.sizeDelta;
-        //sizeDelta.y = transform.GetChild(0).childCount * 149;
-        //rectTransform.sizeDelta = sizeDelta;
     }
 
     public void UpdateTimeline()
