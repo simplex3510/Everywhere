@@ -7,6 +7,8 @@ namespace EveryWhere.Manger
 {
     public class ScheduleManager : SingletonMonoBase<ScheduleManager>
     {
+        public GameObject scheduleSelectWindow;
+
         public static readonly int MAX_WEEK_DAYS = 7;
         public static readonly int MAX_DAY_TIMES = 24;
 

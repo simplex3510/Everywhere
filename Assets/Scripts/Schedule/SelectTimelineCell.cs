@@ -5,14 +5,18 @@ using UnityEngine.EventSystems;
 
 public class SelectTimelineCell : MonoBehaviour, IPointerClickHandler
 {
-    float clickTime = 0f;
+    public GameObject scheduleSelectWindow;
+
+    private float clickTime = 0f;
 
     public void OnPointerClick(PointerEventData eventData)
     {
+
         if ((Time.time - clickTime) < 0.3f)
         {
+            scheduleSelectWindow.SetActive(true);
             Debug.Log("double clicked");
-            clickTime = 0.3f;
+            clickTime = 0.0f;
         }
         else
         {
