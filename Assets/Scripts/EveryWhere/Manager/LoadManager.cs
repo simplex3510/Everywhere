@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using EveryWhere.Base;
+using Unity.VisualScripting;
 
 namespace EveryWhere.Manger
 {
@@ -21,6 +22,24 @@ namespace EveryWhere.Manger
         {
             nextScene = otherScene;
             SceneManager.LoadScene("LoadingScene");
+        }
+
+        public static void InvLoadScene(string otherScene)
+        {
+            nextScene = otherScene;
+            SceneManager.LoadScene("InventoryScene");
+        }
+
+        public static void CSVLoadScene(string otherScene)
+        {
+            nextScene = otherScene;
+            SceneManager.LoadScene("CSVScene");
+        }
+
+        public static void ScheduleLoadScene(string otherScene)
+        {
+            nextScene = otherScene;
+            SceneManager.LoadScene("ScheduleScene");
         }
 
         IEnumerator CLoadScene()
@@ -51,5 +70,6 @@ namespace EveryWhere.Manger
                 yield return null;
             }
         }
+
     }
 }
