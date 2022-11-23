@@ -12,6 +12,11 @@ public class ScheduleSelectWindow : MonoBehaviour
     public Toggle toggle4;
     public Toggle toggle5;
 
+    private void OnEnable()
+    {
+        
+    }
+
     public void OnDisable()
     {
         toggle0.isOn = false;

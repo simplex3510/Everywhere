@@ -219,8 +219,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 667598381}
-        m_TargetAssemblyTypeName: ScrollViewTimelineContent, Assembly-CSharp
+      - m_Target: {fileID: 1233987586}
+        m_TargetAssemblyTypeName: EveryWhere.Manger.UIManager, Assembly-CSharp
         m_MethodName: UpdateTimeline
         m_Mode: 1
         m_Arguments:
@@ -513,6 +513,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 105061639}
   m_CullTransparentMesh: 1
+--- !u!1 &116513983 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4813909281089412174, guid: 396bfabe12e207a4988e3e10880cf1e5, type: 3}
+  m_PrefabInstance: {fileID: 2471061444982856785}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &126014052
 GameObject:
   m_ObjectHideFlags: 0
@@ -1611,7 +1616,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 911326890}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.4680153
+  m_Size: 0.46801516
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1878,8 +1883,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 667598381}
-        m_TargetAssemblyTypeName: ScrollViewTimelineContent, Assembly-CSharp
+      - m_Target: {fileID: 1233987586}
+        m_TargetAssemblyTypeName: EveryWhere.Manger.UIManager, Assembly-CSharp
         m_MethodName: UpdateTimeline
         m_Mode: 1
         m_Arguments:
@@ -2363,7 +2368,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 667598379}
-  - component: {fileID: 667598381}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -2392,18 +2396,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0.0010044798, y: -0.00005722046}
   m_SizeDelta: {x: 0, y: 3651.9434}
   m_Pivot: {x: 0, y: 1}
---- !u!114 &667598381
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 667598378}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5345d5e61e41954e9f82d7ee343d86f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &670209459
 GameObject:
   m_ObjectHideFlags: 0
@@ -3570,8 +3562,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 667598381}
-        m_TargetAssemblyTypeName: ScrollViewTimelineContent, Assembly-CSharp
+      - m_Target: {fileID: 1233987586}
+        m_TargetAssemblyTypeName: EveryWhere.Manger.UIManager, Assembly-CSharp
         m_MethodName: UpdateTimeline
         m_Mode: 1
         m_Arguments:
@@ -3707,7 +3699,7 @@ GameObject:
   - component: {fileID: 898098704}
   - component: {fileID: 898098705}
   m_Layer: 5
-  m_Name: ToggleButton
+  m_Name: ToggleButtonGroup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3752,7 +3744,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fafe2cfe61f6974895a912c3755e8f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AllowSwitchOff: 0
+  m_AllowSwitchOff: 1
 --- !u!1 &901809141
 GameObject:
   m_ObjectHideFlags: 0
@@ -3849,8 +3841,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 667598381}
-        m_TargetAssemblyTypeName: ScrollViewTimelineContent, Assembly-CSharp
+      - m_Target: {fileID: 1233987586}
+        m_TargetAssemblyTypeName: EveryWhere.Manger.UIManager, Assembly-CSharp
         m_MethodName: UpdateTimeline
         m_Mode: 1
         m_Arguments:
@@ -4116,8 +4108,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 667598381}
-        m_TargetAssemblyTypeName: ScrollViewTimelineContent, Assembly-CSharp
+      - m_Target: {fileID: 1233987586}
+        m_TargetAssemblyTypeName: EveryWhere.Manger.UIManager, Assembly-CSharp
         m_MethodName: UpdateTimeline
         m_Mode: 1
         m_Arguments:
@@ -4641,8 +4633,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 667598381}
-        m_TargetAssemblyTypeName: ScrollViewTimelineContent, Assembly-CSharp
+      - m_Target: {fileID: 1233987586}
+        m_TargetAssemblyTypeName: EveryWhere.Manger.UIManager, Assembly-CSharp
         m_MethodName: UpdateTimeline
         m_Mode: 1
         m_Arguments:
@@ -5502,6 +5494,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SideMenuAnimator: {fileID: 0}
   sideMenuButton: {fileID: 0}
+  timeline: {fileID: 116513983}
   recentlyClickedButton: {fileID: 0}
 --- !u!1 &1241826880
 GameObject:
@@ -5907,8 +5900,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 667598381}
-        m_TargetAssemblyTypeName: ScrollViewTimelineContent, Assembly-CSharp
+      - m_Target: {fileID: 1233987586}
+        m_TargetAssemblyTypeName: EveryWhere.Manger.UIManager, Assembly-CSharp
         m_MethodName: UpdateTimeline
         m_Mode: 1
         m_Arguments:
@@ -7184,8 +7177,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 667598381}
-        m_TargetAssemblyTypeName: ScrollViewTimelineContent, Assembly-CSharp
+      - m_Target: {fileID: 1233987586}
+        m_TargetAssemblyTypeName: EveryWhere.Manger.UIManager, Assembly-CSharp
         m_MethodName: UpdateTimeline
         m_Mode: 1
         m_Arguments:
@@ -7875,8 +7868,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 667598381}
-        m_TargetAssemblyTypeName: ScrollViewTimelineContent, Assembly-CSharp
+      - m_Target: {fileID: 1233987586}
+        m_TargetAssemblyTypeName: EveryWhere.Manger.UIManager, Assembly-CSharp
         m_MethodName: UpdateTimeline
         m_Mode: 1
         m_Arguments:
@@ -8601,8 +8594,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 667598381}
-        m_TargetAssemblyTypeName: ScrollViewTimelineContent, Assembly-CSharp
+      - m_Target: {fileID: 1233987586}
+        m_TargetAssemblyTypeName: EveryWhere.Manger.UIManager, Assembly-CSharp
         m_MethodName: UpdateTimeline
         m_Mode: 1
         m_Arguments:
@@ -8747,8 +8740,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 667598381}
-        m_TargetAssemblyTypeName: ScrollViewTimelineContent, Assembly-CSharp
+      - m_Target: {fileID: 1233987586}
+        m_TargetAssemblyTypeName: EveryWhere.Manger.UIManager, Assembly-CSharp
         m_MethodName: UpdateTimeline
         m_Mode: 1
         m_Arguments:
@@ -9028,8 +9021,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 667598381}
-        m_TargetAssemblyTypeName: ScrollViewTimelineContent, Assembly-CSharp
+      - m_Target: {fileID: 1233987586}
+        m_TargetAssemblyTypeName: EveryWhere.Manger.UIManager, Assembly-CSharp
         m_MethodName: UpdateTimeline
         m_Mode: 1
         m_Arguments:
@@ -9174,8 +9167,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 667598381}
-        m_TargetAssemblyTypeName: ScrollViewTimelineContent, Assembly-CSharp
+      - m_Target: {fileID: 1233987586}
+        m_TargetAssemblyTypeName: EveryWhere.Manger.UIManager, Assembly-CSharp
         m_MethodName: UpdateTimeline
         m_Mode: 1
         m_Arguments:
@@ -9320,8 +9313,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 667598381}
-        m_TargetAssemblyTypeName: ScrollViewTimelineContent, Assembly-CSharp
+      - m_Target: {fileID: 1233987586}
+        m_TargetAssemblyTypeName: EveryWhere.Manger.UIManager, Assembly-CSharp
         m_MethodName: UpdateTimeline
         m_Mode: 1
         m_Arguments:
@@ -9753,8 +9746,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 667598381}
-        m_TargetAssemblyTypeName: ScrollViewTimelineContent, Assembly-CSharp
+      - m_Target: {fileID: 1233987586}
+        m_TargetAssemblyTypeName: EveryWhere.Manger.UIManager, Assembly-CSharp
         m_MethodName: UpdateTimeline
         m_Mode: 1
         m_Arguments:

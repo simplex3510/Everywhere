@@ -1,6 +1,6 @@
 public enum EScheduleType
 {
-    None,
+    None = 0,
     Lecture,            // 강의 -
     Preparation,        // 자습 및 과제 -
     OutdoorActivities,  // 대외활동 -

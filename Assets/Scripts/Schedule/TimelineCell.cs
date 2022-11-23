@@ -1,11 +1,11 @@
 using EveryWhere.Manger;
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class TimelineCell : IPointerClickHandler
+public class TimelineCell
 {
     public bool isAllocated { get; private set; }
     public EScheduleType scheduleType { get; private set; }
@@ -16,21 +16,6 @@ public class TimelineCell : IPointerClickHandler
         isAllocated = false;
         scheduleType = EScheduleType.None;
         tiredness = 0;
-    }
-
-    public void OnPointerClick(PointerEventData eventData)
-    {
-        ScheduleManager.Instance.scheduleSelectWindow.SetActive(true);
-        Toggle[] toggles = ScheduleManager.Instance.scheduleSelectWindow.GetComponentsInChildren<Toggle>();
-
-        for (int i = 2; i < (int)EScheduleType.Length; i++)
-        {
-            if (toggles[i].isOn)
-            {
-                AllocateCell(true, (EScheduleType)i);
-                // Button button = 
-            }
-        }
     }
 
     public void AllocateCell(bool isAllocated, EScheduleType scheduleType)
