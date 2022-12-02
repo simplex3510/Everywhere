@@ -24,30 +24,6 @@ namespace EveryWhere.Manger
             SceneManager.LoadScene("LoadingScene");
         }
 
-        public static void InvLoadScene(string otherScene)
-        {
-            nextScene = otherScene;
-            SceneManager.LoadScene("InventoryScene");
-        }
-
-        public static void StoreLoadScene(string otherScene)
-        {
-            nextScene = otherScene;
-            SceneManager.LoadScene("StoreScene");
-        }
-
-        public static void ScheduleLoadScene(string otherScene)
-        {
-            nextScene = otherScene;
-            SceneManager.LoadScene("ScheduleScene");
-        }
-
-        public static void MainLoadScene(string otherScene)
-        {
-            nextScene = otherScene;
-            SceneManager.LoadScene("MainGameScene");
-        }
-
         IEnumerator CLoadScene()
         {
             yield return null;

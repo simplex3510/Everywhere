@@ -6,14 +6,18 @@ using UnityEngine.UI;
 
 public class GenderSwipe : MonoBehaviour
 {
-    public Image rTestImage;
+    /*public Image rTestImage;
     public Sprite rTestSprite;
     public Image lTestImage;
-    public Sprite lTestSprite;
+    public Sprite lTestSprite;*/
     public TextMeshProUGUI RChangetext;
-    public TextMeshProUGUI LChangetext;
+    public TextMeshProUGUI LChangetext; 
+    public TextMeshProUGUI RMChangetext;
+    public TextMeshProUGUI LMChangetext;
+    public TextMeshProUGUI RHChangetext;
+    public TextMeshProUGUI LHChangetext;
 
-    public void rChangeImage()
+   /* public void rChangeImage()
     {
         rTestImage.sprite = rTestSprite;
     }
@@ -21,11 +25,10 @@ public class GenderSwipe : MonoBehaviour
     {
         lTestImage.sprite = lTestSprite;
     }
-
     void Start()
     {
         //Changetext = GetComponent<TextMeshProUGUI>();
-    }
+    } */
 
     public void RChangeText()
     {
@@ -35,5 +38,22 @@ public class GenderSwipe : MonoBehaviour
     public void LChangeText()
     {
         LChangetext.text = "남";
+    }
+
+    public void RMChangeText()
+    {
+        RMChangetext.text = "유";
+    }
+        public void LMChangeText()
+    {
+        LMChangetext.text = "무";
+    }
+    public void RHChangeText()
+    {
+        RHChangetext.text = "기숙사";
+    }
+    public void LHChangeText()
+    {
+        LHChangetext.text = "통학";
     }
 }
