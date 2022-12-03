@@ -220,7 +220,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 198.6, y: 776}
+  m_AnchoredPosition: {x: 201.6, y: 747.00006}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &100359860
@@ -403,8 +403,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 951456902}
-        m_TargetAssemblyTypeName: EveryWhere.Manger.LoadManager, Assembly-CSharp
+      - m_Target: {fileID: 951456904}
+        m_TargetAssemblyTypeName: EveryWhere.Manger.FlipManager, Assembly-CSharp
         m_MethodName: ScheduleLoadScene
         m_Mode: 5
         m_Arguments:
@@ -744,7 +744,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -386, y: 776}
+  m_AnchoredPosition: {x: -383, y: 747.00006}
   m_SizeDelta: {x: 149.581, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &455375058
@@ -1024,8 +1024,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 951456902}
-        m_TargetAssemblyTypeName: EveryWhere.Manger.LoadManager, Assembly-CSharp
+      - m_Target: {fileID: 951456904}
+        m_TargetAssemblyTypeName: EveryWhere.Manger.FlipManager, Assembly-CSharp
         m_MethodName: InvLoadScene
         m_Mode: 5
         m_Arguments:
@@ -1109,7 +1109,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -116, y: 776}
+  m_AnchoredPosition: {x: -113, y: 747}
   m_SizeDelta: {x: 362.289, y: 58.436}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &719336939
@@ -1426,7 +1426,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 951456903}
-  - component: {fileID: 951456902}
+  - component: {fileID: 951456904}
   m_Layer: 0
   m_Name: OnClickEvent
   m_TagString: Untagged
@@ -1434,19 +1434,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &951456902
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 951456901}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 803293e91d29e5842adc7b9b5aebd994, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sliderBar: {fileID: 0}
 --- !u!4 &951456903
 Transform:
   m_ObjectHideFlags: 0
@@ -1462,6 +1449,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &951456904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951456901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 753c3c507ef718e45b212093ff4ee89b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1054192055
 GameObject:
   m_ObjectHideFlags: 0
@@ -1766,7 +1765,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -360.79, y: 892}
+  m_AnchoredPosition: {x: -357.79, y: 845}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1190920542
@@ -2963,8 +2962,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 951456902}
-        m_TargetAssemblyTypeName: EveryWhere.Manger.LoadManager, Assembly-CSharp
+      - m_Target: {fileID: 951456904}
+        m_TargetAssemblyTypeName: EveryWhere.Manger.FlipManager, Assembly-CSharp
         m_MethodName: StoreLoadScene
         m_Mode: 5
         m_Arguments:
