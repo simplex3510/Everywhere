@@ -17,9 +17,6 @@ namespace EveryWhere.Manger
         [SerializeField] private GameObject timeline;           // Content «œ¿ß¿« Timeline ∞¥√º Get
         private GameObject[,] timelineUI;
 
-        [Header("<<<StartGame>>>")]
-        public Button recentlyClickedButton;
-
         void Awake()
         {
             InitializeTimeline();

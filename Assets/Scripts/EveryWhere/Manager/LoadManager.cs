@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using EveryWhere.Base;
-using Unity.VisualScripting;
 
 namespace EveryWhere.Manger
 {
@@ -13,7 +12,7 @@ namespace EveryWhere.Manger
         public static string nextScene;
         [SerializeField] Image sliderBar;
 
-        private void Start()
+        private void Awake()
         {
             StartCoroutine(CLoadScene());
         }
