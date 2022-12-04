@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/CreateCharacterScene.unity
+    guid: ecc1d9a3ec549054c9911925c732c0c3
+  - enabled: 1
+    path: Assets/Scenes/InventoryScene.unity
+    guid: 2bec78b457a1b474db815152474b1fce
+  - enabled: 1
     path: Assets/Scenes/LoadingScene.unity
     guid: 8d4a0ede36c59a847ae52388ee445375
   - enabled: 1
@@ -14,19 +20,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/OptionScene.unity
     guid: 6a0741e61c3ab1d4a9c4e153a0702aab
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 1
-    path: Assets/Scenes/TitleScene.unity
-    guid: adbe34e6bb493aa4683c1df66f2ddf4b
   - enabled: 1
     path: Assets/Scenes/ScheduleScene.unity
     guid: 73e2556ce15175848845fb7627b56656
   - enabled: 1
-    path: Assets/Scenes/InventoryScene.unity
-    guid: 2bec78b457a1b474db815152474b1fce
-  - enabled: 1
     path: Assets/Scenes/StoreScene.unity
     guid: 77c771c1e2e55c347b4291c0623b0db2
+  - enabled: 1
+    path: Assets/Scenes/TitleScene.unity
+    guid: adbe34e6bb493aa4683c1df66f2ddf4b
   m_configObjects: {}

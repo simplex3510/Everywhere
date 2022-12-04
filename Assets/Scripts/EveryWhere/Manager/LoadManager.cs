@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using EveryWhere.Base;
-using Unity.VisualScripting;
 
 namespace EveryWhere.Manger
 {
@@ -13,7 +12,7 @@ namespace EveryWhere.Manger
         public static string nextScene;
         [SerializeField] Image sliderBar;
 
-        private void Start()
+        private void Awake()
         {
             StartCoroutine(CLoadScene());
         }
@@ -22,30 +21,6 @@ namespace EveryWhere.Manger
         {
             nextScene = otherScene;
             SceneManager.LoadScene("LoadingScene");
-        }
-
-        public static void InvLoadScene(string otherScene)
-        {
-            nextScene = otherScene;
-            SceneManager.LoadScene("InventoryScene");
-        }
-
-        public static void StoreLoadScene(string otherScene)
-        {
-            nextScene = otherScene;
-            SceneManager.LoadScene("StoreScene");
-        }
-
-        public static void ScheduleLoadScene(string otherScene)
-        {
-            nextScene = otherScene;
-            SceneManager.LoadScene("ScheduleScene");
-        }
-
-        public static void MainLoadScene(string otherScene)
-        {
-            nextScene = otherScene;
-            SceneManager.LoadScene("MainGameScene");
         }
 
         IEnumerator CLoadScene()
