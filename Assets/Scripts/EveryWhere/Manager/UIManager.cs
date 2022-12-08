@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using EveryWhere.Base;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 namespace EveryWhere.Manger
 {
@@ -19,7 +20,10 @@ namespace EveryWhere.Manger
 
         void Awake()
         {
-            InitializeTimeline();
+            if (SceneManager.GetActiveScene().name == "ScheduleScene")
+            {
+                InitializeTimeline();
+            }
         }
 
         public void UpdateTimeline()
