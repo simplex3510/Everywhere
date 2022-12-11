@@ -28,5 +28,15 @@ namespace EveryWhere.Manger
         {
             SceneManager.LoadScene("MainGameScene");
         }
+
+        public static void CharacterLoadScene(string otherScene)
+        {
+            SceneManager.LoadScene("CreateCharacterScene");
+        }
+
+        public static void TitleLoadScene(string otherScene)
+        {
+            SceneManager.LoadScene("TitleScene");
+        }
     }
 }
