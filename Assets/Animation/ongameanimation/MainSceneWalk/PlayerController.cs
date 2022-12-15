@@ -19,10 +19,11 @@ public class PlayerController : MonoBehaviour
    
     void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0)) //GetMouseButton(0)
+        {
             CalTargetPos();
-
-        MoveToTarget();
+            MoveToTarget();
+        }
     }
 
     void CalTargetPos()
